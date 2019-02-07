@@ -1,0 +1,11 @@
+<template>
+    <div class="view">
+        <input class="toggle" type="checkbox" checked={todoCompleted} onchange={handleCompletedInput}>
+        <label ondblclick={handleEditModeInput}>{todoTitle}</label>
+        <button class="destroy" onclick={handleRemoveInput}></button>
+    </div>
+    <input class="edit" type="text" value={todoTitle}
+        onblur={handleBlur}
+        onchange={handleTitleInput}
+        onkeydown={handleKeyDown} />
+</template>

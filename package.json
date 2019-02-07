@@ -1,0 +1,54 @@
+{
+  "name": "lwc-todo-mvc",
+  "private": true,
+  "version": "1.0.0",
+  "description": "TodoMVC - LWC version",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src/",
+    "start": "concurrently --kill-others \"yarn build --watch\" \"yarn serve\"",
+    "build": "rollup -c ./scripts/rollup.config.js",
+    "serve": "node index.js",
+    "test": "yarn test:unit && yarn test:integration",
+    "test:unit": "jest",
+    "test:integration": "wdio ./scripts/wdio.conf.js"
+  },
+  "keywords": [
+    "lwc",
+    "todo-mvc"
+  ],
+  "author": "LWC Team",
+  "homepage": "https://github.com/salesforce/lwc-todomvc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salesforce/lwc-todomvc"
+  },
+  "devDependencies": {
+    "@lwc/compiler": "0.34.0",
+    "@lwc/engine": "0.34.0",
+    "@lwc/jest-preset": "0.34.0",
+    "@lwc/rollup-plugin": "0.34.0",
+    "@salesforce/eslint-config-lwc": "~0.3.0",
+    "babel-eslint": "^10.0.1",
+    "concurrently": "~4.0.1",
+    "eslint": "^5.10.0",
+    "jest": "~23.6.0",
+    "rollup": "~0.66.6",
+    "rollup-plugin-compat": "0.21.1",
+    "rollup-plugin-replace": "~2.1.0",
+    "rollup-plugin-terser": "^3.0.0",
+    "wdio-mocha-framework": "~0.6.3",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "~0.1.5",
+    "webdriverio": "~4.13.2"
+  },
+  "dependencies": {
+    "express": "~4.16.3",
+    "useragent": "~2.3.0"
+  },
+  "engines": {
+    "node": ">=8.12.0",
+    "npm": ">=6.4.1",
+    "yarn": ">=1.9.4"
+  }
+}

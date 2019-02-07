@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`todo-item default snapshot 1`] = `
+<todo-item>
+  #shadow-root(open)
+    <div
+      class="view"
+    >
+      <input
+        class="toggle"
+        type="checkbox"
+      />
+      <label>
+        foo
+      </label>
+      <button
+        class="destroy"
+      />
+    </div>
+    <input
+      class="edit"
+      type="text"
+    />
+</todo-item>
+`;

@@ -1,0 +1,8 @@
+{
+  "parser": "babel-eslint",
+  "extends": "@salesforce/eslint-config-lwc/recommended",
+  "globals": {
+    "LWC_USE_NATIVE_SHADOW": true,
+    "LWC_CUSTOM_ELEMENT_REGISTRY": true
+  }
+}
