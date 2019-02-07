@@ -1,6 +1,6 @@
-# LWC TodoMVC
+# LWC Workshop
 
-This [TodoMVC app](http://todomvc.com/) works as a proof of concept and boilerplate for standalone applications based on Lightning Web Components (LWC).
+This [Workshop app] works as a proof of concept and boilerplate for standalone applications based on Lightning Web Components (LWC).
 
 ## Requirements
 
@@ -34,7 +34,7 @@ Please note that this sample repo may include some cutting-edge examples that wo
 In order to clone the repo, you need to make sure that you can [connect to Github with SSH](https://help.github.com/enterprise/2.8/user/articles/connecting-to-github-with-ssh/).
 
 ```bash
-git clone git@github.com/salesforce/lwc-todomvc.git
+git clone https://github.com/diervo/lwc-workshop.git
 cd lwc-todomvc
 ```
 

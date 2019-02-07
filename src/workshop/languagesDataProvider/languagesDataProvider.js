@@ -11,6 +11,18 @@ export async function fakeData() {
         {
             language: 'en',
             label: 'English'
+        },
+        {
+            language: 'pt',
+            label: 'Portuguese'
+        },
+        {
+            language: 'fr',
+            label: 'French'
+        },
+        {
+            language: 'zh',
+            label: 'Chinese'
         }
     ];
 }
