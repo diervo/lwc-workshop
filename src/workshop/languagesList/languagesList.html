@@ -1,0 +1,12 @@
+<template>
+
+    <ul>
+        <li><button type="button" onclick={limitUp}>Up</button></li>
+        <li><button type="button" onclick={limitDown}>Down</button></li>
+    </ul>
+    
+    <template for:each={languageLimited} for:item="language">
+        <button type="button" data-key={language.language} key={language} onclick={languageChange}>{language.label}</button>
+    </template>
+
+</template>

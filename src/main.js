@@ -20,7 +20,7 @@
  * - useNativeShadow: true
  */
 
-import App from "todo/app";
+import App from "workshop/app";
 import { createElement, buildCustomElementConstructor } from "lwc";
 
 const useNativeShadow = LWC_USE_NATIVE_SHADOW === 'enabled';
